@@ -14,7 +14,6 @@ export const LinkWithDot: React.FC<LinkProps & { dotPath?: string; className?: s
     const { hasAttention } = useAttention();
     const { pathname } = useLocation();
 
-
     const toPath = typeof to === "string" ? to : hasPathname(to) ? to.pathname : String(to);
     const target = dotPath ?? toPath;
     const active = pathname === toPath;

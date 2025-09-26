@@ -3,7 +3,7 @@ import { AttentionCtx, type AttentionAPI } from "./attentionStore";
 
 const AttentionProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [activeLeaves, setLeaves] = useState<Set<string>>(
-        new Set(["/center/stats/message"])
+        new Set(["/center/2/message"])
     );
 
     const hasAttention = useCallback(
